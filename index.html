@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trzy tabele z literami alfabetu</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			margin-bottom: 20px;
+			font-size: 18px;
+			text-align: center;
+		}
+
+		td {
+			padding: 10px;
+			border: 1px solid black;
+		}
+
+		.red-bg {
+			background-color: red;
+		}
+
+		.green-bg {
+			background-color: green;
+		}
+
+		.purple-bg {
+			background-color: purple;
+		}
+
+		.merged {
+			padding: 0;
+		}
+
+		.centered {
+			text-align: center;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>A</td>
+			<td class="red-bg">B</td>
+			<td class="red-bg">C</td>
+			<td>D</td>
+			<td>E</td>
+			<td>F</td>
+		</tr>
+		<tr>
+			<td>G</td>
+			<td>H</td>
+			<td>I</td>
+			<td class="green-bg">J</td>
+			<td>K</td>
+			<td class="green-bg">L</td>
+		</tr>
+		<tr>
+			<td>M</td>
+			<td>N</td>
+			<td>O</td>
+			<td>P</td>
+			<td class="purple-bg">Q</td>
+			<td class="purple-bg">R</td>
+		</tr>
+		<tr>
+			<td>S</td>
+			<td>T</td>
+			<td class="purple-bg">U</td>
+			<td class="purple-bg">V</td>
+			<td class="purple-bg">W</td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<td>Y</td>
+			<td>Z</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+
+	<table>
+		<tr>
+			<td rowspan="2" class="merged">BC</td>
+			<td>GHIJ</td>
+			<td>KLMN</td>
+			<td rowspan="2" class="merged">UVW</td>
+			<td>X</td>
+			<td>Y</td>
+		</tr>
+		<tr>
+			<td>PQRS</td>
+			<td class="merged" colspan="2">PQRU</td>
+			<td>V</td>
+			<td>Z</td>
+		</tr>
+		<tr>
+			<td colspan="2">B</td>
+			<td>R</td>
+			<td>U</td>
+			<td>W</td>
+			<td>O</td>
+		</tr>
+	</table>
+
+	<table>
+		<tr>
+			<td colspan="6" class="merged centered">Jan Kowalski</td>
+		</tr>
+		<tr>
+			<td>J</td>
+			<td>A</td>
+			<td>N</td>
+			<td>K</td>
+			<td>O</td>
+			<td>W</td>
+		</tr>
+	</table>
+</body>
+</html>
