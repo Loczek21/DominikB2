@@ -1,127 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Trzy tabele z literami alfabetu</title>
-	<style>
-		table {
-			border-collapse: collapse;
-			margin-bottom: 20px;
-			font-size: 18px;
-			text-align: center;
-		}
+<html lang="en" coupert-item="9AF8D9A4E502F3784AD24272D81F0381"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Natalia Grzebieluch</title>
+    <style type="text/css">
+        p
+        {
+            border: 5px solid green;
+            color:red
+        }
+    </style>
 
-		td {
-			padding: 10px;
-			border: 1px solid black;
-		}
 
-		.red-bg {
-			background-color: red;
-		}
-
-		.green-bg {
-			background-color: green;
-		}
-
-		.purple-bg {
-			background-color: purple;
-		}
-
-		.merged {
-			padding: 0;
-		}
-
-		.centered {
-			text-align: center;
-			vertical-align: middle;
-		}
-	</style>
-</head>
+<style type="text/css" id="operaUserStyle">
+    video {
+      filter: -opera-shader(url(data:text/plain;base64,dW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmhhbGYzIHBpeGVsKGNvbnN0IGludCB4LCBjb25zdCBpbnQgeSwgaW4gaGFsZjIgeHkpCnsKCXJldHVybiBpQ2h1bmsuZXZhbCh4eSArIGhhbGYyKHgsIHkpKS5yZ2I7Cn0gIAoKaGFsZjMgUkdYKGhhbGYyIHh5KXsKCWhhbGYzIGYgPQoJcGl4ZWwoLTEsLTEsIHh5KSAqICAxLiArICAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMCwtMSwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDEsLTEsIHh5KSAqICAxLiArCgkKCXBpeGVsKC0xLCAwLCB4eSkgKiAtMS4gKyAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMCwgMCwgeHkpICogLTIuICsgICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAxLCAwLCB4eSkgKiAtMS4gKyAgICAgICAgICAgICAgICAgICAgIAoJCglwaXhlbCgtMSwgMSwgeHkpICogIDEuICsgICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAwLCAxLCB4eSkgKiAtMS4gKyAgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDEsIDEsIHh5KSAqICAxLgoJOwoJcmV0dXJuIGYgLyAtMjsKfQoKaGFsZjMgUkdYTW9yZShoYWxmMiB4eSl7CgloYWxmMyBmID0KCXBpeGVsKC0xLC0xLCB4eSkgKiAgMS4gKyAgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDAsLTEsIHh5KSAqIC0xLiArICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAxLC0xLCB4eSkgKiAgMS4gKwoJCglwaXhlbCgtMSwgMCwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDAsIDAsIHh5KSAqIC0xLiArICAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMSwgMCwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgICAKCQoJcGl4ZWwoLTEsIDEsIHh5KSAqICAxLiArICAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMCwgMSwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAxLCAxLCB4eSkgKiAgMS4gCgk7CglyZXR1cm4gZiAvIC0xOwp9CgoKaGFsZjQgbWFpbihmbG9hdDIgeHkpCnsKCWhhbGY0IGNvbG9yID0gaUNodW5rLmV2YWwoeHkpOwoJCglpZiAoY29sb3IuYSA8IDEpIHsKCQlyZXR1cm4gY29sb3I7Cgl9CgkKCWlmIChpQ2h1bmtTaXplLnggKiBpQ2h1bmtTaXplLnkgPCBNSU5fQVJFQSkgewoJCXJldHVybiBjb2xvcjsKCX0KCglpZiAoaUNodW5rU2l6ZS55IDwgTUlOX1NUUklQIHx8IGlDaHVua1NpemUueCA8IE1JTl9TVFJJUCkgewoJCXJldHVybiBjb2xvcjsKCX0KCglpZiAoeHkueCA8IE1BUkdJTiB8fCB4eS54ID4gKGlDaHVua1NpemUueCAtIE1BUkdJTikgfHwKCSAgICB4eS55IDwgTUFSR0lOIHx8IHh5LnkgPiAoaUNodW5rU2l6ZS55IC0gTUFSR0lOKSkgewogICAgCXJldHVybiBjb2xvcjsgICAgCiAgICB9CgkKCWlmIChpQ2h1bmtTaXplLnggKiBpQ2h1bmtTaXplLnkgPiBUSFJFU0hPTERfQVJFQSkgewoJCWNvbG9yID0gaGFsZjQoUkdYTW9yZSh4eSksIDEpOwoJfSBlbHNlIHsKCQljb2xvciA9IGhhbGY0KFJHWCh4eSksIDEpOwoJfQoKCXJldHVybiBjb2xvcjsKfQo=));
+    }
+  </style><link id="chromealerabat-link" rel="stylesheet" type="text/css" href="chrome-extension://dacdinoicboceafielngnmjjplncljhj/content.css"></head>
 <body>
-	<table>
-		<tr>
-			<td>A</td>
-			<td class="red-bg">B</td>
-			<td class="red-bg">C</td>
-			<td>D</td>
-			<td>E</td>
-			<td>F</td>
-		</tr>
-		<tr>
-			<td>G</td>
-			<td>H</td>
-			<td>I</td>
-			<td class="green-bg">J</td>
-			<td>K</td>
-			<td class="green-bg">L</td>
-		</tr>
-		<tr>
-			<td>M</td>
-			<td>N</td>
-			<td>O</td>
-			<td>P</td>
-			<td class="purple-bg">Q</td>
-			<td class="purple-bg">R</td>
-		</tr>
-		<tr>
-			<td>S</td>
-			<td>T</td>
-			<td class="purple-bg">U</td>
-			<td class="purple-bg">V</td>
-			<td class="purple-bg">W</td>
-			<td>X</td>
-		</tr>
-		<tr>
-			<td>Y</td>
-			<td>Z</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-	</table>
+<p> <br>
+    Tekst jest umieszczony w akapicie <br>
+    Tekst jest umieszczony w akapicie <br>
+    <br>
+</p>    
+    Tekst poza akapitem
 
-	<table>
-		<tr>
-			<td rowspan="2" class="merged">BC</td>
-			<td>GHIJ</td>
-			<td>KLMN</td>
-			<td rowspan="2" class="merged">UVW</td>
-			<td>X</td>
-			<td>Y</td>
-		</tr>
-		<tr>
-			<td>PQRS</td>
-			<td class="merged" colspan="2">PQRU</td>
-			<td>V</td>
-			<td>Z</td>
-		</tr>
-		<tr>
-			<td colspan="2">B</td>
-			<td>R</td>
-			<td>U</td>
-			<td>W</td>
-			<td>O</td>
-		</tr>
-	</table>
 
-	<table>
-		<tr>
-			<td colspan="6" class="merged centered">Dominik Bieroński</td>
-		</tr>
-		<tr>
-			<td>D</td>
-			<td>O</td>
-			<td>M</td>
-			<td>I</td>
-			<td>N</td>
-			<td>K</td>
-			<td>B</td>
-			<td>E</td>
-			<td>R</td>
-			<td>Ń</td>
-			<td>S</td>
-		</tr>
-	</table>
-</body>
-</html>
+</body></html>
